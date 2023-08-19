@@ -1,7 +1,7 @@
 const dashdata = [
     {
         Name: "Total Orders",
-        Number: 127
+        Number: 128
     },
     {
         Name: "Revenue",
@@ -13,4 +13,4 @@ const dashdata = [
     },
 ]
 
-export default dashdata;
+export default dashdata;S
