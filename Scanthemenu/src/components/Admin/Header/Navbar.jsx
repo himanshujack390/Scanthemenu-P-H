@@ -7,7 +7,7 @@ const Navbar = () => {
             <header>
                 <h1>Food Ordering Admin Panel</h1>
 
-                <nav>
+                <nav className='adminNavbar'>
                     <ul>
                         <li>
                             <NavLink to='/adminDash'>Dashboard</NavLink>

@@ -23,25 +23,25 @@ header {
 }
 
 /* Navigation styling */
-nav {
+.adminNavbar {
     width: 100%;
     background-color: #444;
 }
 
-nav ul {
+.adminNavbar ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     padding: 1rem;
 }
 
-nav a {
+.adminNavbar a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.adminNavbar a:hover {
     color: #ff9900;
     /* Change to your desired hover color */
 }
