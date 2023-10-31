@@ -13,28 +13,35 @@ header {
     background-color: #333;
     color: white;
     padding: 1rem;
-    text-align: center;
+    height: 10rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* Navigation styling */
-nav {
+.adminNavbar {
+    width: 100%;
     background-color: #444;
 }
 
-nav ul {
+.adminNavbar ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     padding: 1rem;
 }
 
-nav a {
+.adminNavbar a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.adminNavbar a:hover {
     color: #ff9900;
     /* Change to your desired hover color */
 }
@@ -45,10 +52,12 @@ main {
 }
 
 .dashboard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5rem;
 }
 
 .widget {
@@ -57,6 +66,7 @@ main {
     padding: 1rem;
     text-align: center;
     height: 15rem;
+    width: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,14 +82,6 @@ main {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
-}
-
-.orders,
-.menu,
-.customers {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
 }
 
 .orders h2,
@@ -105,66 +107,4 @@ main {
 .orders th {
     background-color: #f5f5f5;
     font-weight: bold;
-}
-
-/* Menu and Customers section styling */
-.menu ul,
-.customers ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-}
-
-.menu li,
-.customers li {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    transition: background-color 0.3s ease;
-}
-
-.menu li button,
-.customers li button {
-    background-color: #ff9900;
-    border: none;
-    color: white;
-    padding: 0.3rem 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.menu li button:hover,
-.customers li button:hover {
-    background-color: #e58100;
-    transform: scale(1.05);
-}
-
-/* ... previous styles ... */
-
-/* Responsive layout adjustments */
-@media (max-width: 768px) {
-    .dashboard {
-        grid-template-columns: 1fr;
-    }
-
-    .orders table,
-    .menu ul,
-    .customers ul {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .widget,
-    .orders th,
-    .orders td,
-    .menu li,
-    .customers li {
-        padding: 0.5rem;
-    }
 }

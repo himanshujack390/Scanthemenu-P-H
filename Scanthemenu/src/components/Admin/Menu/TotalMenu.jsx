@@ -6,8 +6,8 @@ const TotalMenu = () => {
     return (
         <>
             <section className="menu">
-                <h2>Menu Management</h2>
                 <Navbar />
+                <h2>Menu Management</h2>
                 <ul>
                     {
                         MenuManagementDetails.map((currElem, index) => {
